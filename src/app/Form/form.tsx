@@ -72,7 +72,7 @@ export default function Form() {
                         <Image src={nico} className={form_module.nico} alt="ribbon top" />
                         <Image src={nicoFinger} className={form_module.nicoFinger} alt="ribbon top" />
                     </div>
-                    <p style={{ lineHeight: 1.5, fontSize: '50px', fontWeight: '700' }}>NO NO NO</p>
+                    <p style={{ lineHeight: 1.5, fontSize: '24px', fontWeight: '700' }}>NO NO NO</p>
                 </div>
             </Dialog>
 
