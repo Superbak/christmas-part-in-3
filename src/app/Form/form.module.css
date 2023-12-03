@@ -101,7 +101,7 @@
 /* POP UP */
 .popUp {
     width: calc(100vw - calc(var(--unit) * 2));
-    height: calc(100vh - calc(var(--unit) * 2));
+    height: auto;
     background-color: var(--white);
     border-radius: var(--unit);
     padding: var(--unit);
