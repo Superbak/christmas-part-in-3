@@ -75,7 +75,7 @@ body {
     z-index: 2;
     pointer-events: none;
     animation: tano_anim 20s ease-in-out infinite;
-    transform: translateY(100%);
+    transform: translateY(100%) scale(.8);
 }
 
 @keyframes tano_anim {
@@ -132,7 +132,7 @@ body {
     z-index: 2;
     pointer-events: none;
     animation: omino1_anim 20s ease-in-out infinite;
-    transform: translateY(-50%) rotate(0);
+    transform: translateY(-50%) rotate(0) scale(.8);
     transform-origin: 100% 100%;
 }
 
@@ -158,7 +158,7 @@ body {
     z-index: 2;
     pointer-events: none;
     animation: omino2_anim 20s ease-in-out infinite;
-    transform: rotate(0);
+    transform: rotate(0) scale(.8);
     transform-origin: 0% 100%;
 }
 
@@ -184,7 +184,7 @@ body {
     z-index: 2;
     pointer-events: none;
     animation: omino3_anim 20s ease-in-out infinite;
-    transform: rotate(0);
+    transform: rotate(0) scale(.8);
     transform-origin: 0% 100%;
 }
 
@@ -210,7 +210,7 @@ body {
     z-index: 2;
     pointer-events: none;
     animation: omino4_anim 20s ease-in-out infinite;
-    transform: translateY(-50%) rotate(0);
+    transform: translateY(-50%) rotate(0) scale(.8);
     transform-origin: 100% 100%;
 }
 

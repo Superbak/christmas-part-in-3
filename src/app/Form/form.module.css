@@ -1,5 +1,5 @@
 .wrapper {
-    width: calc(100% - calc(var(--unit) * 2));
+    width: calc(100% - calc(var(--unit) * 4));
     max-width: 400px;
     border-radius: var(--unit);
     background-color: var(--white);
