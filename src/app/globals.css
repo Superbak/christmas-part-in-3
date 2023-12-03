@@ -16,7 +16,7 @@ body * {
 html,
 body {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: var(--background);
@@ -78,6 +78,7 @@ body {
     pointer-events: none;
     animation: tano_anim 20s ease-in-out infinite;
     transform: translateY(100%) scale(.8);
+    transform-origin: bottom;
 }
 
 @keyframes tano_anim {
