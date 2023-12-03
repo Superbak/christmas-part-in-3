@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import { PrimeReactProvider } from 'primereact/api';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import nicola from './img/nicola.png';
 import tano from './img/tano.png';
@@ -33,24 +34,29 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
-            <body className={poppins.className}>
-                <Image src={ribbonTop_img} className="ribbonTopImg" alt="ribbon top" />
-                <Image src={nicola} className="nicola" alt="nicola" />
+        <>
+            <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+            </Head>
+            <html lang="en">
+                <body className={poppins.className}>
+                    <Image src={ribbonTop_img} className="ribbonTopImg" alt="ribbon top" />
+                    <Image src={nicola} className="nicola" alt="nicola" />
 
-                <PrimeReactProvider value={{ unstyled: true }}>
-                    {children}
-                </PrimeReactProvider>
+                    <PrimeReactProvider value={{ unstyled: true }}>
+                        {children}
+                    </PrimeReactProvider>
 
-                <Image src={tano} className="tanoImg" alt="tano" />
-                <Image src={omino1} className="omino1" alt="omino1" />
-                <Image src={omino2} className="omino2" alt="omino2" />
-                <Image src={omino3} className="omino3" alt="omino3" />
-                <Image src={omino4} className="omino4" alt="omino4" />
+                    <Image src={tano} className="tanoImg" alt="tano" />
+                    <Image src={omino1} className="omino1" alt="omino1" />
+                    <Image src={omino2} className="omino2" alt="omino2" />
+                    <Image src={omino3} className="omino3" alt="omino3" />
+                    <Image src={omino4} className="omino4" alt="omino4" />
 
-                <Image src={ribbonBottom_img} className="ribbonBottomImg" alt="Inrecruiting" />
-                <Image src={inrecruiting_img} className="inrecruitingImg" alt="ribbon bottom" />
-            </body>
-        </html>
+                    <Image src={ribbonBottom_img} className="ribbonBottomImg" alt="Inrecruiting" />
+                    <Image src={inrecruiting_img} className="inrecruitingImg" alt="ribbon bottom" />
+                </body>
+            </html>
+        </>
     )
 }
