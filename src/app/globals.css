@@ -157,7 +157,7 @@ body {
 .omino2 {
     position: fixed;
     top: 20%;
-    right: -90px;
+    right: -100px;
     z-index: 2;
     pointer-events: none;
     animation: omino2_anim 20s ease-in-out infinite;
@@ -176,7 +176,7 @@ body {
 
     20%,
     25% {
-        transform: rotate(-50deg) scale(.8);
+        transform: rotate(-55deg) scale(.8);
     }
 }
 
