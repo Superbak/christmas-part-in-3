@@ -1,13 +1,22 @@
 'use client';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
+import type { Metadata } from 'next'
 
 import { DataSaverOff } from '@mui/icons-material';
 import LoginForm from './Form/form';
 import title_img from './img/title.png';
 
 import login_module from './login.module.css';
+
+export const metadata: Metadata = {
+    viewport: {
+        width: "device-width",
+        initialScale: 1,
+        maximumScale: 1,
+        userScalable: false
+    }
+}
 
 export default function Login() {
     const [spinner, setSpinner] = useState(true);
@@ -17,9 +26,6 @@ export default function Login() {
 
     return (
         <>
-            <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-            </Head>
             <div className={login_module.container}>
                 <Image src={title_img} className={login_module.titleImg} alt="Christmas PartIn" />
                 {spinner
