@@ -1,9 +1,4 @@
 [
-    {   
-        "name": "test",
-        "code": 0,
-        "password": 1234
-    },
     { 
         "name": "fucsia",
         "code": 1,
@@ -27,11 +22,6 @@
     { 
         "name": "verde",
         "code": 5,
-        "password": 1234
-    },
-    { 
-        "name": "verdignolo",
-        "code": 6,
         "password": 1234
     }
 ]

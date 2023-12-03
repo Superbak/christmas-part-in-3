@@ -90,6 +90,7 @@ export default function Form() {
                                     optionLabel="name"
                                     optionValue="code"
                                     placeholder="Seleziona..."
+                                    scrollHeight="auto"
                                     className={classNames(form_module.dropdown, {'invalid': fieldState.invalid })}
                                     pt={{
                                         wrapper: {
