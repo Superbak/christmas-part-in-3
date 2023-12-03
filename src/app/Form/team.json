@@ -2,26 +2,26 @@
     { 
         "name": "fucsia",
         "code": 1,
-        "password": 1234
+        "password": 3826
     },
     {   
         "name": "blu",
         "code": 2,
-        "password": 1234
+        "password": 8236
     },
     { 
         "name": "blu scuro",
         "code": 3,
-        "password": 1234
+        "password": 2638
     },
     {   
         "name": "giallo",
         "code": 4,
-        "password": 1234
+        "password": 2863
     },
     { 
         "name": "verde",
         "code": 5,
-        "password": 1234
+        "password": 3682
     }
 ]
