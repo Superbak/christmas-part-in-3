@@ -77,7 +77,7 @@ export default function Form() {
             </Dialog>
 
             <div className={form_module.wrapper}>
-                <div className={form_module.form}>
+                <div className={form_module.formContainer}>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="field-box">
                             <label>Seleziona team:</label>

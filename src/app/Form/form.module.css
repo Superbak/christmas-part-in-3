@@ -11,6 +11,11 @@
     z-index: 2;
 }
 
+.formContainer,
+.formContainer form {
+    width: 100%;
+}
+
 .input {
     width: 100%;
     display: block;
