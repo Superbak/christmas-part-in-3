@@ -112,7 +112,6 @@
     flex-direction: column;
     background-color: var(--background);
     z-index: 5;
-    left: var(--unit);
 }
 .popUpBg {
     background-color: rgba(9, 15, 26, .8);
