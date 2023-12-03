@@ -1,0 +1,8 @@
+.victoryImg {
+    width: calc(100% - var(--unit));
+    height: 60vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}

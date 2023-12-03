@@ -1,0 +1,15 @@
+[
+    { 
+        "name": "rosso",
+        "code": 0,
+        "password": 1234
+    },
+    {   "name": "blu",
+        "code": 1,
+        "password": 1234
+    },
+    {   "name": "giallo",
+        "code": 2,
+        "password": 1234
+    }
+]

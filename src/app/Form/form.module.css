@@ -1,0 +1,154 @@
+.wrapper {
+    width: 100%;
+    max-width: 400px;
+    border-radius: var(--unit);
+    background-color: var(--white);
+    padding: calc(var(--unit) * 2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--unit);
+    z-index: 2;
+}
+
+.input {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--blue-light);
+    border-radius: var(--unit-basic);
+    position: relative;
+    padding: calc(var(--unit) / 2);
+}
+
+.input:global(.invalid) {
+    border-color: var(--red);
+}
+
+.dropdown {
+    composes: input;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdownList {
+    width: 100%;
+    border: 1px solid var(--blue-light);
+    border-radius: var(--unit-basic);
+    background-color: var(--white);
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.dropdownList ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdownItem {
+    padding: calc(var(--unit) / 2);
+    transition: background-color .15s;
+    cursor: pointer;
+}
+
+.dropdownItem + .dropdownItem {
+    border-top: 1px solid var(--blue-light);
+}
+
+.dropdownItem:hover {
+    background-color: var(--blue-light);
+}
+
+.inputNumber {
+    composes: input;
+    padding: 0;
+}
+
+.inputNumber input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: calc(var(--unit) / 2);
+    border-radius: var(--unit-basic);
+}
+
+.submitButton {
+    width: 100%;
+    display: block;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: var(--unit-basic);
+    border: 0;
+    cursor: pointer;
+    padding: calc(var(--unit) / 2);
+    transition: background-color .15s;
+}
+
+.submitButton:hover,
+.submitButton:focus,
+.submitButton:active {
+    background-color: var(--blue-dark);
+}
+
+/* POP UP */
+.popUp {
+    width: 80vw;
+    height: 80vh;;
+    background-color: var(--white);
+    border-radius: var(--unit);
+    padding: var(--unit);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background);
+    z-index: 5;
+}
+.popUpBg {
+    background-color: rgba(9, 15, 26, .8);
+}
+.popUp svg {
+    position: absolute;
+    top: var(--unit);
+    right: var(--unit);
+    cursor: pointer;
+}
+.nicoWrapper {
+    position: relative;
+    width: 60vw;
+    height: 60vw;
+}
+.nico {
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    animation: nico_anim 1s infinite;
+    transform-origin: 50% 100%;
+}
+@keyframes nico_anim {
+    0%, 100% {
+        transform: rotate(-1deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+}
+.nicoFinger {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    bottom: 0;
+    right: 15px;
+    animation: nicoFinger_anim .6s infinite;
+    transform-origin: 50% 100%;
+}
+@keyframes nicoFinger_anim {
+    0%, 100% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
