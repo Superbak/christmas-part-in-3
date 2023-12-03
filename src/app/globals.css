@@ -183,7 +183,7 @@ body {
 .omino3 {
     position: fixed;
     top: 80%;
-    right: -90px;
+    right: -95px;
     z-index: 2;
     pointer-events: none;
     animation: omino3_anim 20s ease-in-out infinite;
