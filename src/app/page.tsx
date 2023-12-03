@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 import { DataSaverOff } from '@mui/icons-material';
 import LoginForm from './Form/form';
@@ -15,12 +16,17 @@ export default function Login() {
     }, []);
 
     return (
-        <div className={login_module.container}>
-            <Image src={title_img} className={login_module.titleImg} alt="Christmas PartIn" />
-            {spinner
-                ? <DataSaverOff className={login_module.spinner} />
-                : <LoginForm />
-            }
-        </div>
+        <>
+            <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+            </Head>
+            <div className={login_module.container}>
+                <Image src={title_img} className={login_module.titleImg} alt="Christmas PartIn" />
+                {spinner
+                    ? <DataSaverOff className={login_module.spinner} />
+                    : <LoginForm />
+                }
+            </div>
+        </>
     )
 }
