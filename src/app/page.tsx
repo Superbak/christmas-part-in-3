@@ -17,7 +17,7 @@ export default function Login() {
     return (
         <>
             <div className={login_module.container}>
-                <Image src={title_img} className={login_module.titleImg} alt="Christmas PartIn" />
+                {/*<Image src={title_img} className={login_module.titleImg} alt="Christmas PartIn" />*/}
                 {spinner
                     ? <DataSaverOff className={login_module.spinner} />
                     : <LoginForm />
